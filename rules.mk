@@ -1,0 +1,14 @@
+SRC += matrix.c
+CUSTOM_MATRIX = lite
+POINTING_DEVICE_DRIVER = adns5050
+KEY_OVERRIDE_ENABLE = yes
+ENCODER_MAP_ENABLE = yes
+WPM_ENABLE = yes  # Enable word per minute counter
+OLED_ENABLE = yes # Enable OLEDs
+SRC += matrix.c        # existing source file
+SRC += bongocat.c      # add Bongo Cat source file to compilation
+CUSTOM_MATRIX = lite   # (existing setting)
+TAP_DANCE_ENABLE = yes
+COMBO_ENABLE = yes
+DYNAMIC_MACRO_ENABLE = yes
+DYNAMIC_MACRO_USER_CALL = yes
